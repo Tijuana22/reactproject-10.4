@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       
-      <h1>MAKE SOMETHING OUT OF NOTHING</h1>
+      <h1>Delicious Dishes Recipe App</h1>
       <SearchBar
         handleSubmit={handleSubmit}
         value={query}
