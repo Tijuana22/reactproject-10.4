@@ -1,11 +1,6 @@
 import React from 'react'
 
-const SearchBar= ({
-    value,
-    isLoading,
-    handleSubmit,
-    onChange
-}) => {
+const SearchBar= ({value, isLoading, handleSubmit, onChange}) => {
   return (
     <div>
         <form onSubmit={handleSubmit}>

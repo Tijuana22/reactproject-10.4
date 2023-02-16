@@ -15,8 +15,8 @@ function App() {
   const searchRecipes = async () => {
     setIsLoading(true);
     const url =apiUrl + query;
-    const res = await fetch(url);
-    const data = await res.json();
+    const response = await fetch(url);
+    const data = await response.json();
     console.log(data);
     setRecipes(data.meals);
     setIsLoading(false);
@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       
-      <h1>Delicious Dishes Recipe App</h1>
+      <h1>Tasty Creations Recipe App</h1>
       <SearchBar
         handleSubmit={handleSubmit}
         value={query}
